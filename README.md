@@ -2,15 +2,12 @@
 
 A new Flutter application.
 
-## Getting Started
+# 사용법
 
-This project is a starting point for a Flutter application.
+- 자신의 월급과 월급을 받는날을 입력해 줍니다
 
-A few resources to get you started if this is your first Flutter project:
+<img src="https://user-images.githubusercontent.com/7010554/61989132-da2bcd80-b065-11e9-8d89-de427edc25b8.jpg" width="20%"></img>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- 아래 버튼을 눌러 실시간으로 쌓이고 있는 월급을 보며 다시 일에 집중합니다
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://user-images.githubusercontent.com/7010554/61989135-ea43ad00-b065-11e9-9520-403c5ec3a9cc.jpg" width="20%"></img>
