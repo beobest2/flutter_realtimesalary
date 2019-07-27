@@ -4,6 +4,7 @@ import 'liquid_progress_indicator/liquid_progress_indicator.dart';
 class DisplayMoney extends StatelessWidget {
   int salary;
   int payday;
+
   DisplayMoney(this.salary, this.payday);
 
   @override
@@ -21,6 +22,7 @@ class DisplayMoney extends StatelessWidget {
 class MoneyShow extends StatefulWidget {
   int salary;
   int payday;
+
   MoneyShow(this.salary, this.payday);
 
   @override
@@ -31,8 +33,9 @@ class _MoneyShowState extends State<MoneyShow> {
   bool _buttonPressed = false;
   bool _loopActive = false;
 
-  String _current_pay = "start";
+  String _current_pay = "궁금하면 오백원";
   double _current_ratio = 0.0;
+
   // 아래 각 단위 애니메이션 비율
   double _big_ratio = 0.0;
   double _second_ratio = 0.0;
@@ -154,15 +157,16 @@ class _MoneyShowState extends State<MoneyShow> {
             width: 150,
             height: 150,
             child: LiquidCircularProgressIndicator(
-              value: _current_ratio / 100.0, // Defaults to 0.5.
-              valueColor: AlwaysStoppedAnimation(Colors
-                  .greenAccent), // Defaults to the current Theme's accentColor.
-              backgroundColor: Colors
-                  .white, // Defaults to the current Theme's backgroundColor.
+              value: _current_ratio / 100.0,
+              // Defaults to 0.5.
+              valueColor: AlwaysStoppedAnimation(Colors.greenAccent),
+              // Defaults to the current Theme's accentColor.
+              backgroundColor: Colors.white,
+              // Defaults to the current Theme's backgroundColor.
               borderColor: Colors.blueAccent,
               borderWidth: 1.0,
-              direction: Axis
-                  .vertical, // The direction the liquid moves (Axis.vertical = bottom to top, Axis.horizontal = left to right). Defaults to Axis.vertical.
+              direction: Axis.vertical,
+              // The direction the liquid moves (Axis.vertical = bottom to top, Axis.horizontal = left to right). Defaults to Axis.vertical.
               center: Text('$str_currentratio %',
                   style: TextStyle(
                       fontSize: 30.0,
@@ -251,20 +255,21 @@ class _MoneyShowState extends State<MoneyShow> {
             ],
           ),
           Listener(
-            onPointerDown: (details) {
-              _buttonPressed = true;
-              changeState();
-            },
-            onPointerUp: (details) {
-              _buttonPressed = false;
-            },
-            child: Container(
-              decoration:
-                  BoxDecoration(color: Colors.green, border: Border.all()),
-              padding: EdgeInsets.all(20.0),
-              child: Icon(Icons.attach_money),
-            ),
-          ),
+              onPointerDown: (details) {
+                _buttonPressed = true;
+                changeState();
+              },
+              onPointerUp: (details) {
+                _buttonPressed = false;
+              },
+              child: CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage("images/500.jpg"),
+                // backgroundColor: Colors.black,
+              )),
+          Listener(
+
+          )
         ],
       )),
     );

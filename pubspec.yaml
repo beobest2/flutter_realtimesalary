@@ -39,6 +39,7 @@ flutter:
     - images/gcb.jpeg
     - images/gcb3.jpeg
     - images/money.jpg
+    - images/500.jpg
 
   fonts:
     - family: Dokdo
