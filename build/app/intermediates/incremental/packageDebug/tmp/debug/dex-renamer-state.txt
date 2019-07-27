@@ -1,4 +1,4 @@
-#Fri Jul 26 17:50:18 KST 2019
-base.0=/Users/hwpark/AndroidStudioProjects/realtime_salary/build/app/intermediates/transforms/dexMerger/debug/0
+#Sat Jul 27 12:52:05 KST 2019
+base.0=C\:\\Users\\leehaejoon\\AndroidStudioProjects\\flutter_realtimesalary\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
